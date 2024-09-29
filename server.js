@@ -10,7 +10,9 @@ app.use(bodyparser.json())
 //clinet is not sending form data => encoding JSON
 app.use(bodyparser.urlencoded({ 'extended': 'false' }))
 //import url 
+
 // let url = require('./url')
+//adding dotenv config
 require('dotenv').config()
 const url= process.env.MONGODB_URL
 //enabling CORS 
